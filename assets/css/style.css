@@ -1,3 +1,15 @@
+h1 {
+    color: brown;
+}
+
+p {
+    color: white;
+}
+
+#home {
+    background-color: black;
+}
+
 .text-center {
     text-align: center;
 }
@@ -10,16 +22,16 @@
     font-weight: bold;
 }
 
-#coffee-box{
-   background-color: brown;
+#coffee-box {
+    background-color: brown;
 }
 
 #tea-box {
-   background-color: #6f4e37;
+    background-color: #6f4e37;
 }
 
 #cold-drinks-box {
-   background-color: chocolate;
+    background-color: chocolate;
 }
 
 form {
