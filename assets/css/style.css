@@ -1,5 +1,6 @@
 h1 {
     color: brown;
+	font-size: 3rem;
 }
 
 p {
@@ -32,6 +33,11 @@ p {
 
 #cold-drinks-box {
     background-color: chocolate;
+}
+
+
+.drinks-box {
+	width: 33%;
 }
 
 form {
@@ -72,3 +78,7 @@ footer > a{
 footer > p{
 			color: silver;
 		}
+
+form {
+	width: 700px;
+}
