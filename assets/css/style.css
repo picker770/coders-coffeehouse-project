@@ -126,9 +126,20 @@ img {
 	background-color: chocolate;
 }
 
+.one-third-width-column {
+    display:inline-block;
+    width:33%;
+}
+
+.two-thirds-width-column {
+    display:inline-block;
+    width:66%;
+}
+
 .drinks-box {
 	width: 33%;
 	margin: 1rem 0;
+	display: inline-block;
 }
 
 /* padding to allow for fixed footer */
