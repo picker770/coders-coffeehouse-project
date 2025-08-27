@@ -108,14 +108,22 @@ img {
 
 #coffee-box {
 	background-color: brown;
+	position: relative;
+	left: 70px;
+	top: -15px;
 }
 
 #tea-box {
 	background-color: #6f4e37;
+	position: relative;
+
 }
 
 #cold-drinks-box {
 	background-color: chocolate;
+    position: relative;
+	right: 70px;
+	top: -15px;
 }
 
 .reasons-box {
@@ -124,6 +132,9 @@ img {
 	width: 100%;
 	margin: 2%;
 	background-color: chocolate;
+	position: relative;
+	left: 20%;
+	top: 30%;
 }
 
 .one-third-width-column {
@@ -294,6 +305,12 @@ label {
 
 .block-label {
     display:block;
+}
+
+
+.vertical-center {
+   position: relative;
+   top: 50%;
 }
 
 
