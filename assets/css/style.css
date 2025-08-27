@@ -21,6 +21,7 @@ h2 {
 
 header {
 	color: beige;
+	
 }
 
 header > p {
@@ -116,6 +117,7 @@ img {
 #tea-box {
 	background-color: #6f4e37;
 	position: relative;
+	z-index: 1;
 
 }
 
@@ -203,6 +205,12 @@ footer {
 	background-color: #6f4e37;
 	padding: 1em;
 	text-align: center;
+	position:fixed;
+	bottom:0;
+	right:0;
+	width:100%;
+	z-index: 3;
+
 }
 
 footer > span {
