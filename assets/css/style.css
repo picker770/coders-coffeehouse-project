@@ -21,7 +21,6 @@ h2 {
 
 header {
 	color: beige;
-	
 }
 
 header > p {
@@ -109,23 +108,30 @@ img {
 
 #coffee-box {
 	background-color: brown;
-	position: relative;
-	left: 70px;
-	top: -15px;
+    position: relative;
+    left: 70px;
+    top: -15px;
 }
 
 #tea-box {
 	background-color: #6f4e37;
 	position: relative;
 	z-index: 1;
-
 }
 
 #cold-drinks-box {
 	background-color: chocolate;
     position: relative;
-	right: 70px;
-	top: -15px;
+    right: 70px;
+    top: -15px;
+}
+
+.one-third-width-column {
+    width: 33.33%;
+}
+
+.two-thirds-width-column {
+    width: 66.66%;
 }
 
 .reasons-box {
@@ -134,19 +140,9 @@ img {
 	width: 100%;
 	margin: 2%;
 	background-color: chocolate;
-	position: relative;
-	left: 20%;
-	top: 30%;
-}
-
-.one-third-width-column {
-    display:inline-block;
-    width:33%;
-}
-
-.two-thirds-width-column {
-    display:inline-block;
-    width:66%;
+    position: relative;
+    left: 20%;
+    top: 30px;
 }
 
 .drinks-box {
@@ -161,26 +157,12 @@ img {
 }
 
 .contact-boxes-container {
-    width: 66%;
-    margin: 0 auto;
+    height: 270px;
 }
 
-.contact-box-left {
-    width: 250px;
-    margin-top: -20px;
-}
-
-.contact-box-right {
-    width: 250px;
-    text-align: right;
-    margin-top: -20px;
-}
-
-.contact-box-center {
-    width: 250px;
+.contact-box {
+    flex: 0 250px;
     height: 250px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 th,
@@ -188,8 +170,10 @@ td {
     border-bottom: 1px solid black;
 }
 
-ul {
+ul, ol {
 	padding: 0;
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 #reasons li {
@@ -205,12 +189,11 @@ footer {
 	background-color: #6f4e37;
 	padding: 1em;
 	text-align: center;
-	position:fixed;
-	bottom:0;
-	right:0;
-	width:100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 	z-index: 3;
-
 }
 
 footer > span {
@@ -271,6 +254,10 @@ form {
 	background-color: white;
 }
 
+.block-label {
+	display: block;
+}
+
 legend {
 	font-size: large;
 	font-weight: 600;
@@ -296,6 +283,7 @@ label {
     padding: 0.5rem;
     margin: 1.5rem 0 0 15px;
     border: 1px solid grey;
+    overflow: scroll;
 }
 
 /* map */
@@ -311,37 +299,28 @@ label {
     border: none;
 }
 
-.block-label {
-    display:block;
+/* FLEXBOX CLASSES */
+
+.flex {
+    display: flex;
 }
 
+.horizontal-center {
+    justify-content: center;
+}
 
 .vertical-center {
-   position: relative;
-   top: 50%;
+    align-self: center;
 }
 
+.vertical-bottom {
+    align-self: flex-end;
+}
 
+.last {
+    order: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.gap-20 {
+    gap: 20px;
+}
